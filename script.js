@@ -10,15 +10,17 @@ async function fetchHeroData(){
             // Cycles each hero by number
             for(let i = 1; i <= 6; i++){
                 let heroNum = "hero" + i;
-                let hero = document.getElementById(heroNum + "name").value; // Takes the hero's name by user input
+                let hero = document.getElementById(heroNum + "name").value.toLowerCase(); // Takes the hero's name by user input
 
                 // Makes sure that the hero name is valid and on the list of heroes before displaying icon
                 // If not on the list, keeps default Keaton icon/assigns default Keaton icon
-                if(2 < hero.length && heroNames.includes(hero.toLowerCase())){
+                if(2 < hero.length && heroNames.includes(hero/*.toLowerCase()*/)){
                     let heroPortrait = "https://epic7db.com/images/heroes/" + hero + ".webp"; // Gets hero portait
                     document.getElementById(heroNum + "icon").src = heroPortrait.replace(/\s/g, "-").toLowerCase(); // Displays hero portait to user
+                    document.getElementById(heroNum + "source").href = "https://epic7db.com/heroes/" + hero;
                 }else{
                     document.getElementById(heroNum + "icon").src = "default_icon.webp";
+                    document.getElementById(heroNum + "source").href = "https://epic7db.com";
                 }
 
                 // Calculate hero's speed using CR & top speed
