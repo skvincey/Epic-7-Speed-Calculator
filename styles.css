@@ -1,0 +1,64 @@
+body{
+/*  Legacy Background
+    background: #525252;
+    background: linear-gradient(180deg,rgba(82, 82, 82, 1) 0%, rgba(0, 0, 0, 1) 100%);
+*/
+    background: #494949;
+    background-attachment: fixed;
+}
+
+.calcedCR{
+    margin-left: 5px;
+    vertical-align: 65px;
+}
+
+.crRange{
+    margin-left: 3px;
+    vertical-align: 65px;
+}
+
+.topSpeedLabel{
+    top: 32px;
+    left: 22px;
+    position: relative;
+}
+
+.topSpeed{
+    margin-left: 117px;
+    top: 144px;
+    left: 6px;
+    position: fixed;
+}
+
+.icons{
+    transform: scale(0.5);
+    margin-right: 0px;
+    float: none;
+}
+
+.names{
+    position: relative;
+    vertical-align: 65px;
+    float: none;
+}
+
+/* CR Input Block*/
+.cr{
+    position: relative;
+    left: -430px;
+    vertical-align: 32px;
+    float: none;
+}
+
+.actualCR{
+    position: relative;
+    vertical-align: 30px;
+    margin-left: -375px;
+}
+
+.calcCR{
+    position: relative;
+    text-align: center;
+    vertical-align: 30px;
+    margin-left: 50px;
+}
