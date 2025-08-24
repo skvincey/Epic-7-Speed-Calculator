@@ -17,7 +17,7 @@ async function fetchHeroData(){
                 if(2 < hero.length && heroNames.includes(hero/*.toLowerCase()*/)){
                     let heroPortrait = "https://epic7db.com/images/heroes/" + hero + ".webp"; // Gets hero portait
                     document.getElementById(heroNum + "icon").src = heroPortrait.replace(/\s/g, "-").toLowerCase(); // Displays hero portait to user
-                    document.getElementById(heroNum + "source").href = "https://epic7db.com/heroes/" + hero;
+                    document.getElementById(heroNum + "source").href = "https://epic7db.com/heroes/" + hero.replace(/\s/g, "-");
                 }else{
                     document.getElementById(heroNum + "icon").src = "default_icon.webp";
                     document.getElementById(heroNum + "source").href = "https://epic7db.com";
